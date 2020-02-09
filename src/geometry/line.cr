@@ -1,6 +1,7 @@
 module Geometry
   struct Line
     property :point1, :point2
+
     def initialize(@point1 : Point, @point2 : Point)
     end
 
@@ -38,7 +39,7 @@ module Geometry
       if vertical? && other.vertical?
         return x_intercept == other.x_intercept ? x_intercept : nil
       end
-      
+
       return if horizontal? && other.horizontal?
       return x_intercept if vertical?
       return other.x_intercept if other.vertical?
@@ -59,7 +60,7 @@ module Geometry
       y1 = point1.y
       y2 = point2.y
 
-      (((x2-x1) * (y1-y0)) - ((x1-x0) * (y2-y1))).abs / Math.sqrt((x2 - x1) ** 2 + (y2 - y1) **2)
+      (((x2 - x1) * (y1 - y0)) - ((x1 - x0) * (y2 - y1))).abs / Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
     end
 
     def length
