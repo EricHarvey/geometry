@@ -1,9 +1,26 @@
 version: 2 # use CircleCI 2.0
-jobs: # a collection of jobs
+
+workflows:
+  version: 2
+  weekly:
+    triggers:
+      - schedule:
+          cron: "0 0 * * 0"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
+  
+  build-deploy:
+    jobs:
+      - build
+jobs:
   build: 
     working_directory: ~/EricHarvey/geometry
     docker:
-      - image: crystallang/crystal:0.27.0
+      - image: crystallang/crystal
     steps:
       - checkout
       - restore_cache:
