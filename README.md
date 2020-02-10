@@ -20,11 +20,7 @@ More or less crystal port of https://github.com/DanielVartanov/ruby-geometry
 require "geometry"
 ```
 
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+https://ericharvey.github.io/geometry/docs/Geometry.html
 
 ## Contributing
 
