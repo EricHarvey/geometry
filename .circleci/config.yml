@@ -33,5 +33,8 @@ jobs:
           paths:
             - ./lib
       - run:
+          name: lint
+          command: crystal tool format --check
+      - run:
           name: test
           command: crystal spec

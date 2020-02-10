@@ -1,6 +1,6 @@
 # geometry
 
-[![<ORG_NAME>](https://circleci.com/gh/EricHarvey/geometry.svg?style=svg)]([<LINK>](https://app.circleci.com/github/EricHarvey/geometry/pipelines))
+[![<ORG_NAME>](https://circleci.com/gh/EricHarvey/geometry.svg?style=svg)](https://app.circleci.com/github/EricHarvey/geometry/pipelines)
 
 More or less crystal port of https://github.com/DanielVartanov/ruby-geometry
 

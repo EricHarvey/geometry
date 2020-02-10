@@ -1,5 +1,7 @@
 name: geometry
 version: 0.1.0
+description: |
+  Simple geometry library implementing classes like Point, Line, Polygon, Segment, etc.
 
 authors:
   - Eric Harvey <eharvey2@gmail.com>
